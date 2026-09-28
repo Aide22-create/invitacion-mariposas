@@ -12,10 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         invitation.classList.add("is-open");
         openButton.style.display = "none";
 
-        invitation.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+        setTimeout(() => {
+    window.scrollTo({
+        top: invitation.offsetTop,
+        behavior: "smooth"
+    });
+}, 100);
     });
 }
 
