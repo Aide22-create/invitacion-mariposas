@@ -8,11 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const invitation = document.getElementById("invitation");
 
     if (openButton && invitation) {
-        openButton.addEventListener("click", function () {
-            invitation.classList.add("is-open");
-            openButton.style.display = "none";
+    openButton.addEventListener("click", function () {
+        invitation.classList.add("is-open");
+        openButton.style.display = "none";
+
+        invitation.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
         });
-    }
+    });
+}
 
 
     // =========================
