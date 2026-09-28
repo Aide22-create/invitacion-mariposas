@@ -716,3 +716,7 @@ footer {
     }
 
 }
+/* Mostrar la invitación al presionar el botón */
+.invitation.is-open {
+    display: block;
+}
